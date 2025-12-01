@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="fixed split-nav">
+        <div class="nav-brand">
+            <h3><a href="#">El laberinto del Minotauro</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="#Tematica">Temática</a></li>
+                    <li><a href="#Produ">Producción</a></li>
+                    <li><a href="#Equipo">Integrantes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="paper container">
+        <h1>Aventura Gráfica Interactiva</h1>
+        <div class="row">
+            <div class="col-8">
+                <article class="article">
+                    <h1 id="Tematica" class="article-title">Sobre la temática</h1>
+                    <p>
+                        Para la temática de nuestra aventura gráfica utilizamos el tema principal de la mitología
+                        griega, eligiendo como referencia la historia de Teseo y el Minotauro. La misma narra
+                        originalmente cómo Teseo viajó a Creta para matar al Minotauro, una bestia mitad hombre y mitad
+                        toro que vivía en un laberinto. Ayudado por Ariadna, que le dio un ovillo de hilo para guiarse,
+                        Teseo mató a la criatura y liberó a Atenas de un tributo de catorce jóvenes. En este caso la
+                        aventura incluye algunas partes del mito principal, mientras que en otras las modifica
+                        ligeramente para la libre elección del usuario.
+                    </p>
+                </article>
+            </div>
+            <div class="col-3 row flex-middle">
+                <div>
+                    <label class="paper-btn margin" for="modal-1">Jugar</label>
+                    <input class="modal-state" id="modal-1" type="checkbox" />
+                    <div class="modal">
+                        <label class="modal-bg" for="modal-1"></label>
+                        <div class="modal-body">
+                            <label class="btn-close" for="modal-1">X</label>
+                            <iframe src="p5/index.html" frameborder="0" width="800" height="600"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row"></div>
+        <div class="col-12 col">
+            <article class="article">
+                <h1 id="Produ" class="article-title">Sobre la producción</h1>
+                <p>Para la producción se utilizo el espacio de p5.js. La música proviene de una librería gratuita de
+                    sonido, mientras que las imágenes fueron generadas por IA (CHATGPT en este caso). El primer
+                    boceto
+                    de los nodos y sus bifurcaciones fue asi:</p> <img src="img/BOCETO.jpeg" width="600"
+                    class="no-responsive no-border">
+
+                <p>Mas adelante se cambio su estructura y se ajustaron las opciones para que las bifurcaciones
+                    condujeran de forma real a otras pantallas en lugar de darle al usuario la falsa sensación de
+                    estar
+                    eligiendo algo:</p> <img src="img/Flujo de acciones.jpg" width="800"
+                    class="no-responsive no-border">
+
+                <p>Las pantallas fueron armadas en figma para mejor organización y control estético, y se agregaron
+                    mas
+                    cambios en las bifurcaciones, ahora algunas elecciones de jugador te permiten acortar la
+                    historia o
+                    finalizarla en otra rama.</p> <img src="img/produccion.png" width="800"
+                    class="no-responsive no-border">
+
+                <p>En resumen, la aventura cuenta con 14 pantallas en total, una pantalla de créditos donde se
+                    menciona
+                    a los integrantes, 4 finales alternativos y un botón para activar o pausar la música.</p>
+        </div>
+        </article>
+        <h1 id="Equipo" class="article-title">Integrantes</h1>
+
+        <div class="row background-warning">
+            <div class="col-6 border border-secondary">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Bejar Keyla Nerea</h4>
+                        <p class="card-text">Primer año de multimedia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Inchauspe Celeste</h4>
+                        <p class="card-text">Primer año de multimedia y dvc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h4>página hecha por keyla.</h4>
+
+            </div>
+
+            <div class="col-6">
+                <h4>Muchas gracias por ver.</h4>
+            </div>
+        </div>
+
+</body>
+
+</html>

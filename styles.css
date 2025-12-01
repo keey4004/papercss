@@ -1,0 +1,14 @@
+body {
+    background-color: #9c8844;
+    background-image: url("https://llevatetodo.com/wp-content/uploads/2019/07/Minotauro.01.jpg");
+
+    .paper-btn {
+        background-color: #e59f4a;
+        color: white;
+        border-color: #ea703c;
+    }
+
+    .paper-btn:hover {
+        background-color: #da8632;
+
+    }
